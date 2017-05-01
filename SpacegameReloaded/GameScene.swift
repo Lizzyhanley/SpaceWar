@@ -141,7 +141,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
     
     
-//    
+//    This will allow you to move you entire soace background, which is trippy, but not what we wanna do
 //    @IBAction func handlePan(_ gestureRecognizer: UIPanGestureRecognizer) {
 //        if gestureRecognizer.state == .began || gestureRecognizer.state == .changed {
 //            
@@ -274,7 +274,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         if (firstBody.categoryBitMask & photonTorpedoCategory) != 0 && (secondBody.categoryBitMask & alienCategory) != 0 {
            torpedoDidCollideWithAlien(torpedoNode: firstBody.node as! SKSpriteNode, alienNode: secondBody.node as! SKSpriteNode)
-        }
+        }     
         
     }
     
